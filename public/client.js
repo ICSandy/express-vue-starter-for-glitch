@@ -23,5 +23,15 @@ Vue.createApp({
     return {
       count: 0
     }
+  },
+  methods: {
+    announceCount(event) {
+      alert(`The count is... ${this.count}!`);
+    },
+  },
+  computed: {
+    countPlusOne() {
+      return this.count + 1
+    }
   }
 }).mount('#app')
